@@ -1,4 +1,0 @@
-```
-IntegrityError(1062, "Duplicate entry '130644-84e7e2f8-1dc9-4a38-a07e-8d09b167d160' for key 'endpoints.endpoints_user_machine_guid'")
-```
-The main failure appears to be IntegrityError 1062 on endpoints_user_machine_guid during endpoint update/create. This looks consistent with a race condition on concurrent processing of the same endpoint. The browsers_epid_fkey error likely appears downstream after the endpoint write fails.
