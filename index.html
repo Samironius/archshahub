@@ -321,9 +321,13 @@ img {
   border-right: 2px solid var(--color-accent);
 }
 
-.about-image-placeholder svg {
-  width: 50%;
-  color: var(--color-border);
+.about-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .section-label {
@@ -1095,22 +1099,7 @@ img {
       <div class="about-grid">
         <div class="about-image">
           <div class="about-image-placeholder">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="30" y="80" width="60" height="90" stroke="currentColor" stroke-width="2" fill="none"/>
-              <rect x="110" y="50" width="60" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
-              <rect x="45" y="100" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="60" y="100" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="45" y="130" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="60" y="130" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="125" y="70" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="140" y="70" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="125" y="100" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="140" y="100" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="125" y="130" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <rect x="140" y="130" width="15" height="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <line x1="0" y1="170" x2="200" y2="170" stroke="currentColor" stroke-width="2"/>
-              <polygon points="30,80 60,55 90,80" stroke="currentColor" stroke-width="2" fill="none"/>
-            </svg>
+            <img src="images/House_Image.png" alt="Сучасний архітектурний проект">
           </div>
         </div>
         <div class="about-text">
